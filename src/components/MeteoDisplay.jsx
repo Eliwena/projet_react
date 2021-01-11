@@ -4,7 +4,6 @@ export default function MeteoDisplay({ ville, code }) {
     console.log(ville);
     let [villeData, setVilleData] = useState({});
     const api_code = code;
-    console.log(villeData);
 
     useEffect(() => {
         let lastCalled = true;
@@ -25,6 +24,7 @@ export default function MeteoDisplay({ ville, code }) {
     if (!villeData.id) {
         return <></>;
     }
+    console.log(villeData.weather[0].description);
     return (
         <ul>
             <div>id: {villeData.id}</div>

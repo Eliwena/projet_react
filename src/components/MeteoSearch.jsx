@@ -4,8 +4,7 @@ export default function MeteoSearch({ setVille }) {
 
     let [ville, setVilles] = useState("");
     let values = ville;
-    const handleSubmit = (event) => {
-    };
+
 
     return (
         <form onSubmit={ setVille(values)}>

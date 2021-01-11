@@ -5,9 +5,14 @@ function Index() {
 
     return (
         <div className="App">
-            <p>Salut</p>
-            <a href="pokemon_app">Pokemon</a><br />
-            <a href="meteo_app">Méteo</a>
+            <header className="App-header">
+                <h1>Projet React</h1>
+                    <nav className="navgation">
+                        <a className="lien" href="pokemon_app">Pokemon</a>
+                        <a className="lien" href="meteo_app">Méteo</a>
+                        <a className="lien" href="fusion_app"> Pokémon en fonction de la météo </a>
+                    </nav>
+            </header>
         </div>
     )
 

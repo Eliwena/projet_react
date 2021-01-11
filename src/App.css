@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+h1{
+  display: flex;
+  align-items: flex-start;
+}
+.navigation{
+  display: flex;
+  font-size: calc(20px + 2vmin);
+
+}
+.lien{
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.lien:hover{
+  font-size: calc(20px + 2vmin);
+}

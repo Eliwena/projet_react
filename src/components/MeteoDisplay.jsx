@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 
 export default function MeteoDisplay({ ville, code }) {
+    console.log(ville);
     let [villeData, setVilleData] = useState({});
     const api_code = code;
-    console.log(villeData)
+    console.log(villeData);
 
     useEffect(() => {
         let lastCalled = true;
@@ -28,7 +29,7 @@ export default function MeteoDisplay({ ville, code }) {
         <ul>
             <div>id: {villeData.id}</div>
             <div>name: {villeData.name}</div>
-            <div>Meteo : {villeData.weather[0].description}{villeData.weather[0].icon}</div>
+            <div>Meteo : {villeData.weather[0].description}</div>
         </ul>
     );
 }

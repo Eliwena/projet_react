@@ -5,8 +5,10 @@ import MeteoSearch from './components/MeteoSearch';
 
 // PROBLÈME RECUP  VILLE
 function App_meteo() {
+
     let [selectedVille, setSelectedVille] = useState("");
     console.log(selectedVille);
+
     return (
         <div className="App">
             <header className="App-header">

@@ -3,13 +3,12 @@ import { useState } from "react";
 export default function MeteoSearch({ setVille }) {
 
     let [ville, setVilles] = useState("");
-
-    const handleSubmit = (e) => {
-        setVille(e.target.value);
+    let values = ville;
+    const handleSubmit = (event) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={ setVille(values)}>
             <h1>Choix de la ville</h1>
             <label>Ville:  </label>
             <input
